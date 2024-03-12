@@ -1,0 +1,148 @@
+$primary_color: hsl(4, 100%, 67%);
+$first_color: hsl(234, 29%, 20%);
+$second_color: hsl(235, 18%, 26%);
+$third_color: hsl(231, 7%, 60%);
+$fourth_color: hsl(0, 0%, 100%);
+$fifth_color: #000;
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+  background: $second_color;
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .container {
+    background: $fourth_color;
+    width: 600px;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    border-radius: 20px;
+ }
+
+ .left-container {
+  width: 56%;
+  padding: 40px 30px;
+  font-weight: 400;
+
+ }
+
+ .right-container {
+    width: 44%;
+    background-image: url('../assets/illustration-sign-up-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ 
+    
+ }
+
+ .left-container {
+  h1 {
+    color: $first_color;
+    font-weight: 700;
+    font-size: 35px;
+  }
+  p {
+    color: $fifth_color;
+    font-size: 11px;
+    margin: 15px 0;
+    font-weight: 400;
+    color: $second_color;
+  }
+ }
+
+ .list-container {
+    width: auto; 
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ .per-list-item {
+    font-size: 12px;
+    color: $second_color;
+ }
+
+ .per-list-item {
+  img {
+    width: 13px;
+    margin-right: 5px;
+  }
+ }
+
+ .form-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+ }
+
+ .form-container {
+    b {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+ }
+
+ #email,
+ .btn {
+     padding: 10px 12px;
+     font-size: 11px;
+     border-radius: 5px;
+     border: 0.7px solid hsla(231.4, 6.9%, 60%, 0.37);
+     margin: 5px 0;
+  }
+
+  #email {
+    outline: none;
+  }
+
+  .btn {
+    text-align: center;
+    background: $first_color;
+    color: $fourth_color;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+
+    .left-container,
+    .right-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .left-container {
+        padding: 20px;
+        margin-bottom: 230px;
+    }
+
+    .right-container {
+        width: 100%;
+        background-image: url('../assets/illustration-sign-up-mobile.svg');
+        border-radius: 0 0 12px 12px;
+        background-size: 100%;
+        height: 100%;
+    }
+
+
+  }
