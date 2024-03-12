@@ -115,13 +115,19 @@ body {
   }
   .left-container {
     padding: 20px;
-    margin-bottom: 230px;
+    margin-bottom: 100px;
   }
   .right-container {
     width: 100%;
     background-image: url("../assets/illustration-sign-up-mobile.svg");
     border-radius: 0 0 12px 12px;
     background-size: 100%;
-    height: 100%;
+    height: 500px;
+  }
+  .left-container h1 {
+    font-size: 25px;
+  }
+  .form-container {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
