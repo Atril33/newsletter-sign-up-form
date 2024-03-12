@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(235, 18%, 26%);
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: hsl(0, 0%, 100%);
+  width: 600px;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  border-radius: 20px;
+}
+
+.left-container {
+  width: 56%;
+  padding: 40px 30px;
+  font-weight: 400;
+}
+
+.right-container {
+  width: 44%;
+}
+
+.right-container img {
+  width: 100%;
+  height: 372px;
+}
+
+.left-container h1 {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  font-size: 35px;
+}
+.left-container p {
+  color: #000;
+  font-size: 11px;
+  margin: 15px 0;
+  font-weight: 400;
+  color: hsl(235, 18%, 26%);
+}
+
+.list-container {
+  width: auto;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.per-list-item {
+  font-size: 12px;
+  color: hsl(235, 18%, 26%);
+}
+
+.per-list-item img {
+  width: 13px;
+  margin-right: 5px;
+}
+
+.form-container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.form-container b {
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+#email,
+.btn {
+  padding: 10px 12px;
+  font-size: 11px;
+  border-radius: 5px;
+  border: 0.7px solid hsla(231.4, 6.9%, 60%, 0.37);
+  margin: 5px 0;
+}
+
+#email {
+  outline: none;
+}
+
+.btn {
+  text-align: center;
+  background: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
