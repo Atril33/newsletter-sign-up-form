@@ -20,16 +20,18 @@
             <div class="per-list-item"><img src="assets/icon-list.svg"> Measuring to ensure updates are a success</div>
             <div class="per-list-item"><img src="assets/icon-list.svg"> And much more!</div>
         </div>
-        <div class="form-container">
-            <b>Email Address</b>
-            <input type="email" id="email" placeholder="email@compnay.com" required />
-            <div class="btn">Subscribe to monthly newsletter</div> 
-        </div>
+        <form action="./" class="form-container">
+            <div class="email-result"><h5>Email Address</h5> <h5 id="email-error"></h5></div>
+            <input type="email" id="email-input" placeholder="email@compnay.com" required />
+            <submit type="submit" class="submit-button">Subscribe to monthly newsletter</submit> 
+        </form>
         </div>
         <div class="right-container">
         </div>
 
        
     </div>
+    <div id="pop-thanks-message"></div>
+    <script src="js/main.js"></script>
 </body>
 </html>

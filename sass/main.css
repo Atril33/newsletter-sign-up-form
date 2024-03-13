@@ -74,13 +74,19 @@ body {
   width: 90%;
 }
 
-.form-container b {
-  font-size: 11px;
-  margin-bottom: 5px;
+.email-result {
+  display: flex;
+  justify-content: space-between;
 }
 
-#email,
-.btn {
+.form-container h5 {
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+
+#email-input,
+.submit-button,
+.close-button {
   padding: 10px 12px;
   font-size: 11px;
   border-radius: 5px;
@@ -88,16 +94,62 @@ body {
   margin: 5px 0;
 }
 
-#email {
+#email-input {
   outline: none;
 }
 
-.btn {
+.submit-button,
+.close-button {
   text-align: center;
   background: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   cursor: pointer;
+}
+
+#pop-thanks-message {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: hsl(235, 18%, 26%);
+}
+
+.thanks-message-container {
+  width: 270px;
+  height: auto;
+  background: hsl(0, 0%, 100%);
+  padding: 20px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.success-icon {
+  width: 35px;
+}
+
+.thanks-message-container h2 {
+  margin-top: 10px;
+  font-size: 32px;
+  line-height: 30px;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+.thanks-message-container p {
+  margin-top: 10px;
+  font-size: 11px;
+  color: hsl(235, 18%, 26%);
+}
+.thanks-message-container .close-button {
+  margin-top: 20px;
+}
+.thanks-message-container .close-button:hover {
+  background-image: linear-gradient(90deg, #ff5572, #ff6646);
+  box-shadow: rgba(255, 101, 70, 0.4392156863) 0px 8px 24px;
+  border: 0;
 }
 
 @media screen and (max-width: 768px) {
