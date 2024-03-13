@@ -110,6 +110,12 @@ $fifth_color: #000;
      margin: 5px 0;
   }
 
+  .submit-button:hover {
+   background-image: linear-gradient(90deg, #ff5572, #ff6646);
+   box-shadow:  #ff654670 0px 8px 24px;
+   border: 0;
+}
+
   #email-input {
     outline: none;
   }
@@ -144,11 +150,12 @@ $fifth_color: #000;
       border-radius: 20px;
    }
  
-   .success-icon {
-      width: 35px;
-   }
-
+ 
    .thanks-message-container {
+      .success-icon {
+         width: 35px;
+      }
+
       h2 {
          margin-top: 10px;
          font-size: 32px;
@@ -168,13 +175,17 @@ $fifth_color: #000;
          margin-top: 20px;
       }
 
-      .close-button:hover {
-         background-image: linear-gradient(90deg, #ff5572, #ff6646);
-         box-shadow:  #ff654670 0px 8px 24px;
-         border: 0;
-      }
    }
- 
+   
+   .close-button:hover {
+      background-image: linear-gradient(90deg, #ff5572, #ff6646);
+      box-shadow:  #ff654670 0px 8px 24px;
+      border: 0;
+   }
+
+   #email-error {
+      color: rgba(255, 0, 0, 0.527);
+   }
 
   @media screen and (max-width: 768px) {
     .container {
@@ -215,5 +226,31 @@ $fifth_color: #000;
     width: 100%;
  }
 
-  }
+ .thanks-message-container { 
+  padding: 100px 30px 0 30px;
+  width: 100%;
+  height: 100vh;
+  border-radius: 0;
+ }
+ 
 
+ .thanks-message-container {
+  h1,
+  p {
+   margin-top: 20px;
+  }
+  .success-icon {
+   width: 50px;
+   margin-bottom: 20px;
+}
+ }
+ .close-button {
+  width: 90%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+  }
+  
