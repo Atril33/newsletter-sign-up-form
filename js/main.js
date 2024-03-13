@@ -13,15 +13,20 @@ submitButton.addEventListener('click', function () {
         emailField.style.backgroundColor = '#ffe6e6';
         emailError.innerHTML = 'Email cannot be empty';
     }
-    var emailVerify = validateEmail(email);
-    if (emailVerify === false) {
-        emailField.style.border = '0.70px solid #ff8080';
-        emailField.style.backgroundColor = '#ffe6e6';
-        emailError.innerHTML = 'Please provide a valid email';
-    }
     else {
-        popThanksMessage.style.display = 'block';
-        popThanksMessage.innerHTML = "<div class=\"thanks-message-container\">\n    <img src=\"../assets/icon-success.svg\" alt=\"success-icon\" class=\"success-icon\">\n    <h2>Thanks for subscribing!</h2>\n    <p>A confirmation email has been sent to <b>".concat(email, "</b>. Please open it and click the button inside to confirm your subscription.</p>\n    <div class=\"close-button\" onclick=\"closeThanksMessage()\">Dismiss Message</div>\n    </div>");
+        var emailVerify = validateEmail(emailField.value);
+        if (emailVerify) {
+            console.log(emailVerify);
+            popThanksMessage.style.display = 'block';
+            popThanksMessage.innerHTML = "<div class=\"thanks-message-container\">\n                <img src=\"./assets/icon-success.svg\" alt=\"success-icon\" class=\"success-icon\">\n                <h2>Thanks for subscribing!</h2>\n                <p>A confirmation email has been sent to <b>".concat(emailField.value, "</b>. Please open it and click the button inside to confirm your subscription.</p>\n                <div class=\"close-button\" onclick=\"closeThanksMessage()\">Dismiss Message</div>\n            </div>");
+        }
+        else {
+            console.log(emailVerify);
+            emailField.style.border = '0.70px solid #ff8080';
+            emailField.style.backgroundColor = '#ffe6e6';
+            emailError.innerHTML = 'Please provide a valid email';
+            emailField.value = '';
+        }
     }
 });
 function closeThanksMessage() {
